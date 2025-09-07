@@ -8,11 +8,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Button variant={"ghost"} asChild>
-            <Link href={"/"}>Home</Link>
+            <Link href={"/tricks"}>راهنما</Link>
           </Button>
 
           <Button variant={"ghost"} asChild>
-            <Link href={"/tricks"}>Tricks</Link>
+            <Link href={"/"}>برنامه</Link>
           </Button>
         </div>
       </div>

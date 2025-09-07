@@ -110,8 +110,11 @@ const Tricks = () => {
                       <TableRow>
                         <TableCell>استراحت بین ست‌ها</TableCell>
                         <TableCell>
-                          حرکات چندمفصلی ۹۰–۱۲۰ث؛ تک‌مفصلی ۴۵–۷۵ث؛ FST-۷ =
-                          ۳۰–۴۵ث
+                          <ul className="list-disc pr-6 space-y-1 text-sm">
+                            <li>حرکات چندمفصلی: ۹۰–۱۲۰ ثانیه</li>
+                            <li>حرکات تک‌مفصلی: ۴۵–۷۵ ثانیه</li>
+                            <li>FST-7: ۳۰–۴۵ ثانیه</li>
+                          </ul>
                         </TableCell>
                       </TableRow>
                       <TableRow>
