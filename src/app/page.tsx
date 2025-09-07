@@ -1,3 +1,9 @@
+import SessionChestTriceps from "@/components/workouts/first-plan";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div className="container mx-auto p-4">
+      <SessionChestTriceps />
+    </div>
+  );
 }
