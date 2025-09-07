@@ -40,7 +40,7 @@ function SessionChestTriceps() {
         <span className="text-muted-foreground">(FST-7 Chest Fly)</span>
       </h3>
 
-      <ScrollArea className="w-full">
+      <div className="overflow-x-auto">
         <Table dir="ltr" className=" text-right">
           <TableHeader>
             <TableRow>
@@ -173,7 +173,7 @@ function SessionChestTriceps() {
             </TableRow>
           </TableBody>
         </Table>
-      </ScrollArea>
+      </div>
 
       {/* راهنمای کوتاه */}
       <div className="mt-3 text-xs text-muted-foreground space-y-1 text-right">
@@ -201,7 +201,7 @@ function SessionBackRearDelts() {
         <span className="text-muted-foreground">(FST-7 Lats)</span>
       </h3>
 
-      <ScrollArea className="w-full">
+      <div className="overflow-x-auto">
         <Table dir="ltr" className="text-right">
           <TableHeader>
             <TableRow>
@@ -322,7 +322,7 @@ function SessionBackRearDelts() {
             </TableRow>
           </TableBody>
         </Table>
-      </ScrollArea>
+      </div>
 
       {/* راهنمای کوتاه */}
       <div className="mt-3 text-xs text-muted-foreground space-y-1 text-right">
@@ -350,7 +350,7 @@ function SessionLegsHamGlutesCalves() {
         جلسه ۳ — پا (همسترینگ/گلوت) + ساق
       </h3>
 
-      <ScrollArea className="w-full">
+      <div className="overflow-x-auto">
         <Table dir="ltr" className="text-right">
           <TableHeader>
             <TableRow>
@@ -461,7 +461,7 @@ function SessionLegsHamGlutesCalves() {
             </TableRow>
           </TableBody>
         </Table>
-      </ScrollArea>
+      </div>
 
       {/* راهنمای کوتاه */}
       <div className="mt-3 text-xs text-muted-foreground space-y-1 text-right">
@@ -490,7 +490,7 @@ function SessionShouldersBicepsCore() {
         <span className="text-muted-foreground">(FST-7 Laterals)</span> + کور
       </h3>
 
-      <ScrollArea className="w-full">
+      <div className="overflow-x-auto">
         <Table dir="ltr" className="text-right">
           <TableHeader>
             <TableRow>
@@ -633,7 +633,7 @@ function SessionShouldersBicepsCore() {
             </TableRow>
           </TableBody>
         </Table>
-      </ScrollArea>
+      </div>
 
       {/* راهنمای کوتاه */}
       <div className="mt-3 text-xs text-muted-foreground space-y-1 text-right">
@@ -662,7 +662,7 @@ function SessionQuadsCalvesFST7() {
         <span className="text-muted-foreground">(FST-7 Quads)</span>
       </h3>
 
-      <ScrollArea className="w-full">
+      <div className="overflow-x-auto">
         <Table dir="ltr" className="text-right">
           <TableHeader>
             <TableRow>
@@ -773,7 +773,7 @@ function SessionQuadsCalvesFST7() {
             </TableRow>
           </TableBody>
         </Table>
-      </ScrollArea>
+      </div>
 
       {/* راهنمای کوتاه */}
       <div className="mt-3 text-xs text-muted-foreground space-y-1 text-right">
