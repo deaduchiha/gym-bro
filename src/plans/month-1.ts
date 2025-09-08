@@ -4,7 +4,7 @@ export const chestTricepsRows = [
     setsReps: "۳–۵ × ۶–۱۰",
     tempo: "3–1–1",
     rest: "۹۰–۱۲۰ث",
-    note: "کمپاندِ اصلی",
+    note: "پرس اصلی برای بخش بالایی سینه",
     copyText: "Incline DB Press",
   },
   {
@@ -12,7 +12,7 @@ export const chestTricepsRows = [
     setsReps: "۳–۴ × ۶–۱۰",
     tempo: "3–1–1",
     rest: "۹۰–۱۲۰ث",
-    note: "فشار افقی",
+    note: "تمرکز بر فشار افقی روی کل سینه",
     copyText: "Machine/Barbell Flat Press",
   },
   {
@@ -20,7 +20,7 @@ export const chestTricepsRows = [
     setsReps: "۲–۳ × ۸–۱۲",
     tempo: "3–1–1",
     rest: "~۹۰ث",
-    note: "سینه‌محور",
+    note: "تأکید بر سینه، مخصوصاً بخش پایینی",
     copyText: "Weighted/Assisted Dips",
   },
   {
@@ -28,7 +28,7 @@ export const chestTricepsRows = [
     setsReps: "۷ × ۱۰–۱۲",
     tempo: "کنترلی",
     rest: "۳۰–۴۵ث",
-    note: "کشش بین‌ست",
+    note: "کشش کامل سینه؛ ست‌های FST-7 با استرچ بین‌ست",
     fst7: true,
     copyText: "Cable Fly (High→Low",
   },
@@ -37,7 +37,7 @@ export const chestTricepsRows = [
     setsReps: "۳–۴ × ۱۰–۱۵",
     tempo: "3–1–1",
     rest: "۴۵–۷۵ث",
-    note: "ایزولهٔ تریسپس",
+    note: "ایزوله‌سازی مستقیم عضلات پشت بازو",
     copyText: "Rope Pushdown",
   },
   {
@@ -45,7 +45,7 @@ export const chestTricepsRows = [
     setsReps: "۲–۳ × ۱۰–۱۲",
     tempo: "3–1–1",
     rest: "۴۵–۷۵ث",
-    note: "سرِ بلندِ تریسپس",
+    note: "هدف‌گیری سرِ بلند تریسپس (کشش در دامنه)",
     copyText: "Overhead DB/Rope",
   },
   {
@@ -53,7 +53,7 @@ export const chestTricepsRows = [
     setsReps: "طبق هفته",
     tempo: "—",
     rest: "—",
-    note: "۲۰–۴۵د مطابق پلن هفتگی",
+    note: "هوازی پایدار ۲۰–۴۵ دقیقه طبق پلن هفتگی",
   },
 ];
 
@@ -63,7 +63,7 @@ export const backRearDeltsRows = [
     setsReps: "۳–۴ × ۸–۱۲",
     tempo: "3–1–1",
     rest: "~۹۰ث",
-    note: "لتِ کششی",
+    note: "کشش عریض برای لت و پهنای پشت",
     copyText: "Wide-Grip Lat Pulldown",
   },
   {
@@ -71,7 +71,7 @@ export const backRearDeltsRows = [
     setsReps: "۳–۴ × ۶–۱۰",
     tempo: "3–1–1",
     rest: "۹۰–۱۲۰ث",
-    note: "قایقیِ ساپورت",
+    note: "پارو زدن ساپورت‌شده برای ضخامت",
     copyText: "Chest-Supported Row (T-bar/Row Machine)",
   },
   {
@@ -79,7 +79,7 @@ export const backRearDeltsRows = [
     setsReps: "۳ × ۸–۱۲",
     tempo: "3–1–1",
     rest: "۷۵–۹۰ث",
-    note: "دامنه کامل",
+    note: "دامنه کامل برای تعادل در حجم پشت",
     copyText: "Seated Cable Row (Neutral)",
   },
   {
@@ -87,7 +87,7 @@ export const backRearDeltsRows = [
     setsReps: "۲–۳ × ۸–۱۲/هر سمت",
     tempo: "3–1–1",
     rest: "۷۵–۹۰ث",
-    note: "تمرکز و سیمتری",
+    note: "تمرکز و تقارن دو سمت بدن",
     copyText: "Single-Arm DB Row",
   },
   {
@@ -95,7 +95,7 @@ export const backRearDeltsRows = [
     setsReps: "۷ × ۱۰–۱۲",
     tempo: "کنترلی",
     rest: "۳۰–۴۵ث",
-    note: "کشش بین‌ست",
+    note: "کشش عمیق لت‌ها؛ ست‌های FST-7",
     fst7: true,
     copyText: "Straight-Arm Pulldown",
   },
@@ -104,7 +104,7 @@ export const backRearDeltsRows = [
     setsReps: "۲–۳ × ۱۲–۱۵",
     tempo: "2–1–1",
     rest: "۴۵–۷۵ث",
-    note: "دلتوئید خلفی / کف دست رو به هم",
+    note: "هدف‌گیری دلتوئید خلفی و عضلات تثبیت‌کننده شانه",
     copyText: "Face Pull",
   },
   {
@@ -112,7 +112,7 @@ export const backRearDeltsRows = [
     setsReps: "طبق هفته",
     tempo: "—",
     rest: "—",
-    note: "۲۰–۴۵د برحسب هفته",
+    note: "هوازی پایدار ۲۰–۴۵ دقیقه بر اساس هفته",
   },
 ];
 
@@ -122,7 +122,7 @@ export const legsHamGlutesCalvesRows = [
     setsReps: "۳–۴ × ۶–۱۰",
     tempo: "3–1–1",
     rest: "۱۲۰ث",
-    note: "هیپ‌هینج؛ پشت صاف",
+    note: "هیپ‌هینج برای همسترینگ؛ تمرکز بر فرم و پشت صاف",
     copyText: "Romanian Deadlift",
   },
   {
@@ -130,7 +130,7 @@ export const legsHamGlutesCalvesRows = [
     setsReps: "۳–۴ × ۱۰–۱۲",
     tempo: "3–1–1",
     rest: "۶۰–۷۵ث",
-    note: "هفته ۴: ست آخر Drop-set ×1",
+    note: "ایزوله همسترینگ؛ هفته ۴ آخرین ست Drop-set",
     copyText: "Lying/Seated Leg Curl",
   },
   {
@@ -138,7 +138,7 @@ export const legsHamGlutesCalvesRows = [
     setsReps: "۳–۴ × ۸–۱۲",
     tempo: "مکث بالا ۱ث",
     rest: "۹۰–۱۲۰ث",
-    note: "گلوت‌محور",
+    note: "تمرکز بر گلوت؛ مکث ۱ث در بالاترین دامنه",
     copyText: "Hip Thrust (BB/Machine)",
   },
   {
@@ -146,7 +146,7 @@ export const legsHamGlutesCalvesRows = [
     setsReps: "۲–۳ × ۸–۱۲/هر پا",
     tempo: "3–1–1",
     rest: "~۹۰ث",
-    note: "تعادل و عمق",
+    note: "بهبود تعادل و عمق حرکتی",
     copyText: "Bulgarian Split Squat",
   },
   {
@@ -154,7 +154,7 @@ export const legsHamGlutesCalvesRows = [
     setsReps: "۷ × ۱۰–۱۲ یا ۴ × ۱۲–۱۵",
     tempo: "2–1–1",
     rest: "۳۰–۴۵ث (FST) / ۶۰–۷۵ث",
-    note: "FST-7 اختیاری برای ساق",
+    note: "تقویت ساق؛ ست‌های FST-7 اختیاری",
     fst7: true,
     copyText: "Calf Raise (Seated/Donkey)",
   },
@@ -163,7 +163,7 @@ export const legsHamGlutesCalvesRows = [
     setsReps: "طبق هفته",
     tempo: "—",
     rest: "—",
-    note: "۲۰–۴۵د برحسب هفته",
+    note: "هوازی پایدار ۲۰–۴۵ دقیقه",
   },
 ];
 
@@ -173,7 +173,7 @@ export const shouldersBicepsCoreRows = [
     setsReps: "۳–۴ × ۶–۱۰",
     tempo: "3–1–1",
     rest: "۹۰–۱۲۰ث",
-    note: "پرس اصلی",
+    note: "پرس اصلی شانه‌ها",
     copyText: "Seated DB Shoulder Press",
   },
   {
@@ -181,7 +181,7 @@ export const shouldersBicepsCoreRows = [
     setsReps: "۳ × ۱۲–۱۵",
     tempo: "2–1–1",
     rest: "۴۵–۶۰ث",
-    note: "پیش‌خستگی لترال",
+    note: "پیش‌خستگی لترال برای رشد بهتر",
     copyText: "Lateral Raise (DB/Cable)",
   },
   {
@@ -189,7 +189,7 @@ export const shouldersBicepsCoreRows = [
     setsReps: "۷ × ۱۰–۱۲",
     tempo: "کنترلی",
     rest: "۳۰–۴۵ث",
-    note: "FST-7 + کشش بین‌ست",
+    note: "ست‌های کششی برای پمپاژ شدید شانه",
     fst7: true,
     copyText: "Lateral Raise – FST-7",
   },
@@ -198,7 +198,7 @@ export const shouldersBicepsCoreRows = [
     setsReps: "۲–۳ × ۱۲–۱۵",
     tempo: "2–1–1",
     rest: "۴۵–۷۵ث",
-    note: "دلتوئید خلفی",
+    note: "تمرکز بر دلتوئید خلفی",
     copyText: "Rear Delt Machine / Reverse Peck-Deck",
   },
   {
@@ -206,7 +206,7 @@ export const shouldersBicepsCoreRows = [
     setsReps: "۳ × ۸–۱۲",
     tempo: "3–1–1",
     rest: "۶۰–۹۰ث",
-    note: "جلو بازو",
+    note: "جلو بازوی اصلی با دامنه کنترل‌شده",
     copyText: "EZ-Bar Curl",
   },
   {
@@ -214,7 +214,7 @@ export const shouldersBicepsCoreRows = [
     setsReps: "۲–۳ × ۱۰–۱۲",
     tempo: "3–1–1",
     rest: "۶۰–۷۵ث",
-    note: "کشش کامل",
+    note: "کشش کامل جلو بازو در دامنه پایین",
     copyText: "Incline DB Curl",
   },
   {
@@ -222,7 +222,7 @@ export const shouldersBicepsCoreRows = [
     setsReps: "۸–۱۰ دقیقه",
     tempo: "—",
     rest: "استراحت کم",
-    note: "Plank / Deadbug / Pallof",
+    note: "تمرین هسته (Plank / Deadbug / Pallof) با استراحت حداقلی",
     copyText: "Core Circuit",
   },
   {
@@ -230,7 +230,7 @@ export const shouldersBicepsCoreRows = [
     setsReps: "طبق هفته",
     tempo: "—",
     rest: "—",
-    note: "۲۰–۴۵د برحسب هفته",
+    note: "هوازی پایدار ۲۰–۴۵ دقیقه",
   },
 ];
 
@@ -240,7 +240,7 @@ export const quadsCalvesRows = [
     setsReps: "۴–۵ × ۶–۱۲",
     tempo: "3–1–1",
     rest: "~۱۲۰ث",
-    note: "سنگین / کنترلی",
+    note: "فشار سنگین و کنترل‌شده روی کواد",
     copyText: "Hack Squat یا Leg Press",
   },
   {
@@ -248,7 +248,7 @@ export const quadsCalvesRows = [
     setsReps: "۳ × ۶–۱۰",
     tempo: "3–1–1",
     rest: "۱۲۰ث",
-    note: "تنه قائم",
+    note: "اسکوات با تنه قائم برای کواد",
     copyText: "Front Squat یا Goblet",
   },
   {
@@ -256,7 +256,7 @@ export const quadsCalvesRows = [
     setsReps: "۲–۳ × ۲۰–۳۰ قدم مجموع",
     tempo: "2–1–1",
     rest: "~۹۰ث",
-    note: "گام‌های یکنواخت",
+    note: "لانج پویا برای استقامت و حجم پا",
     copyText: "Walking Lunges",
   },
   {
@@ -264,7 +264,7 @@ export const quadsCalvesRows = [
     setsReps: "۷ × ۱۰–۱۲",
     tempo: "کنترلی",
     rest: "۳۰–۴۵ث",
-    note: "FST-7 کواد + کشش بین‌ست",
+    note: "کشش کامل کواد؛ ست‌های FST-7 با استرچ بین‌ست",
     fst7: true,
     copyText: "Leg Extension",
   },
@@ -273,7 +273,7 @@ export const quadsCalvesRows = [
     setsReps: "۴ × ۱۰–۱۵",
     tempo: "2–1–1",
     rest: "۶۰–۷۵ث",
-    note: "مکث بالا ۱ث",
+    note: "تمرکز بر ساق با مکث در بالاترین دامنه",
     copyText: "Standing Calf Raise",
   },
   {
@@ -281,6 +281,6 @@ export const quadsCalvesRows = [
     setsReps: "طبق هفته",
     tempo: "—",
     rest: "—",
-    note: "۲۰–۴۵د برحسب هفته",
+    note: "هوازی پایدار ۲۰–۴۵ دقیقه",
   },
 ];
