@@ -1,593 +1,520 @@
 import { IPlan } from "@/types/type";
 
-export const PLAN = {
-  // meta: {
-  //   client: "Alireza Nikzad",
-  //   date: "2025-09-27",
-  //   goal: {
-  //     en: "Cut body fat from ~27% to 15–18% and reduce visceral fat from 9 → ≤5 while maintaining/increasing lean mass.",
-  //     fa: "کاهش چربی بدن از حدود ۲۷٪ به ۱۵–۱۸٪ و کاهش چربی احشایی از ۹ به ≤۵ با حفظ/افزایش توده بدون چربی.",
-  //   },
-  //   weekly_notes: {
-  //     en: "Train 5 days/week. Add 8–10k steps daily. Keep 1–2 reps in reserve (RIR) on big lifts. Use low-impact cardio (bike/row/incline walk). If joints feel beat up, reduce volume by 20%.",
-  //     fa: "۵ روز در هفته تمرین. روزانه ۸–۱۰ هزار قدم. در حرکات اصلی ۱–۲ تکرار ذخیره (RIR) نگه‌دار. کاردیو کم‌فشار (دوچرخه/روینگ/پیاده‌روی با شیب). در صورت خستگی مفاصل، حجم را ۲۰٪ کم کن.",
-  //   },
-  // },
-  week_plan: [
-    {
-      day: 1,
-      title: {
-        en: "Upper Strength + Metabolic Finisher",
-        fa: "بالاتنه قدرتی + فینیشر متابولیک",
-      },
-      notes: {
-        en: "Heavy compounds to preserve strength; short finisher to boost calorie burn.",
-        fa: "حرکات اصلی سنگین برای حفظ قدرت؛ فینیشر کوتاه برای افزایش کالری‌سوزی.",
-      },
-      warmup: [
-        {
-          name: {
-            en: "Incline treadmill walk (5–7%)",
-            fa: "پیاده‌روی روی تردمیل با شیب ۵–۷٪",
-          },
-          sets: 1,
-          reps: "8–10 min",
-          rest: "-",
-          hint: {
-            en: "Nasal breathing, easy pace.",
-            fa: "تنفس از بینی، شدت ملایم.",
-          },
-        },
-        {
-          name: {
-            en: "Band pull-aparts + Scap push-ups",
-            fa: "کشش کشی پشت شانه + شنا اسکاپیولا",
-          },
-          sets: 2,
-          reps: "15 each",
-          rest: "30 s",
-          hint: {
-            en: "Prime shoulders & upper back.",
-            fa: "گرم‌کردن سرشانه و پشت.",
-          },
-        },
-      ],
-      exercises: [
-        {
-          name: { en: "Barbell Bench Press", fa: "پرس سینه هالتر" },
-          sets: 4,
-          reps: "5–6",
-          rest: "120–150 s",
-          hint: {
-            en: "RIR 1–2; full stop on chest, no bounce.",
-            fa: "۱–۲ تکرار ذخیره؛ مکث کوتاه روی سینه، بدون جهش.",
-          },
-        },
-        {
-          name: { en: "Chest-Supported Row", fa: "划 پارویی سینه‌تکیه" },
-          sets: 4,
-          reps: "6–8",
-          rest: "120 s",
-          hint: {
-            en: "Drive elbows to ribs; neutral spine.",
-            fa: "آرنج‌ها به سمت دنده؛ ستون فقرات خنثی.",
-          },
-        },
-        {
-          name: { en: "Incline Dumbbell Press", fa: "پرس سینه دمبل روی شیب" },
-          sets: 3,
-          reps: "8–10",
-          rest: "90 s",
-          hint: {
-            en: "2–3 s controlled lowering.",
-            fa: "۲–۳ ثانیه پایین‌بردن کنترل‌شده.",
-          },
-        },
-        {
-          name: {
-            en: "Lat Pulldown (medium grip)",
-            fa: "لت پول‌داون (گریپ متوسط)",
-          },
-          sets: 3,
-          reps: "8–10",
-          rest: "90 s",
-          hint: {
-            en: "Chest up, pull to collarbone.",
-            fa: "سینه بالا، کشش تا ترقوه.",
-          },
-        },
-        {
-          name: {
-            en: "Dumbbell Lateral Raise",
-            fa: "پشت‌سرشانه جانبى با دمبل",
-          },
-          sets: 3,
-          reps: "12–15",
-          rest: "60 s",
-          hint: {
-            en: "Soft elbows; raise to shoulder height.",
-            fa: "آرنج‌ها کمی خم؛ تا ارتفاع شانه.",
-          },
-        },
-      ],
-      finisher: [
-        {
-          name: { en: "AirBike sprints", fa: "اسپرینت روی ایر بایک" },
-          sets: 8,
-          reps: "15 s hard / 45 s easy",
-          rest: "as written",
-          hint: {
-            en: "Stay seated; smooth power.",
-            fa: "نشسته بمان؛ توان یکنواخت.",
-          },
-        },
-      ],
+export const PLANS: IPlan[] = [
+  {
+    day: 1,
+    title: {
+      en: "Push — Chest/Shoulders/Triceps (FST-7 Chest)",
+      fa: "پوش — سینه/سرشانه/پشت‌بازو (FST-7 سینه)",
     },
-    {
-      day: 2,
-      title: { en: "Lower Strength + Core", fa: "پایین‌تنه قدرتی + میان‌تنه" },
-      notes: {
-        en: "Big leg moves to drive metabolism; core for spinal stability.",
-        fa: "حرکات سنگین پا برای تقویت متابولیسم؛ میان‌تنه برای ثبات ستون فقرات.",
+    notes:
+      "روی فاز منفی کنترل‌شده (۳ ثانیه) و فاز مثبت انفجاری تمرکز کن. در پایان سینه FST-7 انجام بده؛ بین ست‌ها نفس‌گیری و کشش عمیق داشته باش. هیدراته بمان و مصرف نمک را کمی مدیریت کن.",
+    warmup: [
+      {
+        name: {
+          en: "Treadmill Walk (Incline 3–5%)",
+          fa: "پیاده‌روی تردمیل (شیب ۳–۵٪)",
+        },
+        sets: 1,
+        reps: "6–8 min @ RPE 5–6",
+        rest: "—",
+        hint: "EN: Raise core temp; nasal breathing. | FA: دمای بدن را بالا ببر؛ با بینی نفس بکش.",
       },
-      warmup: [
-        {
-          name: { en: "Bike + Hip openers", fa: "دوچرخه ثابت + موبیلیتی لگن" },
-          sets: 1,
-          reps: "6–8 min",
-          rest: "-",
-          hint: {
-            en: "Light spin; cossack squats 2×8/side.",
-            fa: "چرخش سبک؛ اسکوات کاساک ۲×۸ هر سمت.",
-          },
+      {
+        name: {
+          en: "Band Shoulder Dislocates",
+          fa: "کشش سرشانه با کش (دیسلوکیت)",
         },
-      ],
-      exercises: [
-        {
-          name: {
-            en: "Back or Safety-Bar Squat",
-            fa: "اسکوات هالتر یا سیفتی‌بار",
-          },
-          sets: 4,
-          reps: "5–6",
-          rest: "150 s",
-          hint: {
-            en: "Depth to comfortable range; RIR 1–2.",
-            fa: "تا عمق بدون درد؛ ۱–۲ تکرار ذخیره.",
-          },
-        },
-        {
-          name: { en: "Romanian Deadlift", fa: "ددلیفت رومانیایی" },
-          sets: 3,
-          reps: "6–8",
-          rest: "120 s",
-          hint: {
-            en: "Hinge at hips; feel hamstrings.",
-            fa: "لولا از لگن؛ تمرکز روی همسترینگ.",
-          },
-        },
-        {
-          name: {
-            en: "Leg Press (feet mid/low)",
-            fa: "پرس پا (قرارگیری پا متوسط/پایین)",
-          },
-          sets: 3,
-          reps: "10–12",
-          rest: "90 s",
-          hint: {
-            en: "Full lockout not required; control tempo.",
-            fa: "نیازی به قفل کامل زانو نیست؛ کنترل ریتم.",
-          },
-        },
-        {
-          name: { en: "Seated Leg Curl", fa: "لیگ‌کرل نشسته" },
-          sets: 3,
-          reps: "12–15",
-          rest: "60–75 s",
-          hint: {
-            en: "Squeeze 1 s at peak.",
-            fa: "۱ ثانیه مکث در اوج انقباض.",
-          },
-        },
-        {
-          name: { en: "Standing Calf Raise", fa: "ساق ایستاده" },
-          sets: 4,
-          reps: "12–15",
-          rest: "60 s",
-          hint: {
-            en: "Slow 2–3 s lowering; stretch between sets 10 s.",
-            fa: "۲–۳ ثانیه فاز منفی؛ بین ست‌ها ۱۰ ثانیه کشش.",
-          },
-        },
-      ],
-      core: [
-        {
-          name: { en: "Plank", fa: "پلانک" },
-          sets: 3,
-          reps: "45–60 s",
-          rest: "30 s",
-          hint: {
-            en: "Ribs down, glutes tight.",
-            fa: "دنده‌ها پایین، گلوت سفت.",
-          },
-        },
-        {
-          name: { en: "Pallof Press", fa: "پالوف پرس" },
-          sets: 3,
-          reps: "10/side",
-          rest: "30 s",
-          hint: {
-            en: "Anti-rotation; don’t let hips twist.",
-            fa: "ضدچرخش؛ اجازه پیچش لگن نده.",
-          },
-        },
-      ],
-      cardio: [
-        {
-          name: { en: "Incline walk (Zone 2)", fa: "پیاده‌روی با شیب (زون ۲)" },
-          sets: 1,
-          reps: "12–15 min",
-          rest: "-",
-          hint: {
-            en: "You can talk in full sentences.",
-            fa: "بتوانی کامل صحبت کنی.",
-          },
-        },
-      ],
-    },
-    {
-      day: 3,
-      title: { en: "Conditioning + Mobility", fa: "کاندیشنینگ + موبیلیتی" },
-      notes: {
-        en: "Low-impact intervals for fat loss; finish with mobility to aid recovery.",
-        fa: "اینتروال کم‌فشار برای چربی‌سوزی؛ پایان با موبیلیتی برای ریکاوری.",
+        sets: 2,
+        reps: "12–15",
+        rest: "30s",
+        hint: "باز کردن سینه و سرشانه.",
       },
-      conditioning: [
-        {
-          name: { en: "Rowing Intervals", fa: "اینتروال روئینگ" },
-          sets: 10,
-          reps: "30 s hard / 90 s easy",
-          rest: "as written",
-          hint: {
-            en: "Keep strokes smooth; hard = 8/10 effort.",
-            fa: "کشش‌ها نرم و پیوسته؛ شدت سخت ۸ از ۱۰.",
-          },
-        },
-      ],
-      accessory_circuit: [
-        {
-          name: { en: "Goblet Squat (light)", fa: "گابلت اسکوات (سبک)" },
-          sets: 3,
-          reps: "12",
-          rest: "45 s",
-          hint: {
-            en: "Heels down, chest tall.",
-            fa: "پاشنه‌ها روی زمین، سینه بالا.",
-          },
-        },
-        {
-          name: {
-            en: "Push-up (elevated if needed)",
-            fa: "شنا (در صورت نیاز با ارتفاع)",
-          },
-          sets: 3,
-          reps: "8–12",
-          rest: "45 s",
-          hint: {
-            en: "Stop 1 rep before failure.",
-            fa: "۱ تکرار قبل از ناتوانی توقف کن.",
-          },
-        },
-        {
-          name: { en: "Band Face Pull", fa: "فیس‌پول با کش" },
-          sets: 3,
-          reps: "15",
-          rest: "45 s",
-          hint: {
-            en: "Rope to nose; external rotation.",
-            fa: "کشش تا مقابل بینی؛ چرخش خارجی.",
-          },
-        },
-      ],
-      mobility: [
-        {
-          name: {
-            en: "90/90 Hips + Thoracic Rotations",
-            fa: "۹۰/۹۰ لگن + چرخش قفسه‌سینه",
-          },
-          sets: 1,
-          reps: "10 min total",
-          rest: "-",
-          hint: { en: "Slow breathing; no pain.", fa: "تنفس آهسته؛ بدون درد." },
-        },
-      ],
-    },
-    {
-      day: 4,
-      title: {
-        en: "Upper Hypertrophy (Back/Delts/Chest) + Short Cardio",
-        fa: "بالاتنه هایپرتروفی (پشت/سرشانه/سینه) + کاردیو کوتاه",
+      {
+        name: { en: "Scapular Push-ups", fa: "شنا کتف" },
+        sets: 2,
+        reps: "12–15",
+        rest: "30s",
+        hint: "فقط حرکت کتف؛ آرنج ثابت.",
       },
-      notes: {
-        en: "Higher reps for muscle retention and extra calorie burn.",
-        fa: "تکرارهای بالاتر برای حفظ عضله و سوزاندن کالری بیشتر.",
+    ],
+    exercises: [
+      {
+        name: {
+          en: "Incline Barbell Bench Press",
+          fa: "پرس سینه هالتر شیب‌دار",
+        },
+        sets: 4,
+        reps: "6–8",
+        rest: "120s",
+        hint: "نگه‌داشتن ۱ ثانیه پایین، منفی ۳ ثانیه.",
       },
-      warmup: [
-        {
-          name: {
-            en: "Incline walk + Shoulder CARs",
-            fa: "پیاده‌روی با شیب + چرخش مفصل شانه",
-          },
-          sets: 1,
-          reps: "6–8 min",
-          rest: "-",
-          hint: { en: "Light sweat only.", fa: "فقط کمی عرق." },
-        },
-      ],
-      exercises: [
-        {
-          name: { en: "Seated Cable Row", fa: "روئینگ سیم‌کش نشسته" },
-          sets: 4,
-          reps: "8–10",
-          rest: "90 s",
-          hint: { en: "Chest up; 1 s squeeze.", fa: "سینه بالا؛ ۱ ثانیه مکث." },
-        },
-        {
-          name: { en: "Incline DB Press", fa: "پرس دمبل شیب‌دار" },
-          sets: 4,
-          reps: "8–12",
-          rest: "90 s",
-          hint: { en: "Control eccentric 2–3 s.", fa: "فاز منفی ۲–۳ ثانیه." },
-        },
-        {
-          name: { en: "Wide-Grip Pulldown", fa: "پول‌داون دست‌باز" },
-          sets: 3,
-          reps: "10–12",
-          rest: "75–90 s",
-          hint: { en: "Elbows under bar path.", fa: "آرنج‌ها زیر مسیر میله." },
-        },
-        {
-          name: { en: "DB Shoulder Press", fa: "پرس سرشانه دمبل" },
-          sets: 3,
-          reps: "8–10",
-          rest: "90 s",
-          hint: { en: "No lower-back arch.", fa: "قوس کمر نده." },
-        },
-        {
-          name: {
-            en: "Cable Fly (mid height)",
-            fa: "کابل فلای (ارتفاع متوسط)",
-          },
-          sets: 3,
-          reps: "12–15",
-          rest: "60 s",
-          hint: {
-            en: "Stretch 1–2 s; squeeze 1 s.",
-            fa: "۱–۲ ثانیه کشش؛ ۱ ثانیه انقباض.",
-          },
-        },
-        {
-          name: {
-            en: "DB Lateral Raise (drop set last)",
-            fa: "لترال دمبل (ست کاهشیِ آخر)",
-          },
-          sets: 3,
-          reps: "12–15",
-          rest: "60 s",
-          hint: { en: "Last set drop 25–30%.", fa: "ست آخر ۲۵–۳۰٪ وزن کمتر." },
-        },
-      ],
-      cardio: [
-        {
-          name: { en: "Stair machine (Zone 3)", fa: "پله‌نورد (زون ۳)" },
-          sets: 1,
-          reps: "10–12 min",
-          rest: "-",
-          hint: {
-            en: "Breathing heavy but sustainable.",
-            fa: "نفس‌نفس اما قابل‌دوام.",
-          },
-        },
-      ],
-    },
-    {
-      day: 5,
-      title: {
-        en: "Full-Body Metabolic Circuit + Carries",
-        fa: "تمام‌بدن متابولیک + کری‌ها",
+      {
+        name: { en: "Flat Dumbbell Bench Press", fa: "پرس سینه دمبل" },
+        sets: 3,
+        reps: "8–10",
+        rest: "90s",
+        hint: "آرنج‌ها ۴۵ درجه.",
       },
-      notes: {
-        en: "Circuits raise heart rate and calorie burn without joint pounding; carries build core and grip.",
-        fa: "سیرکیت‌ها ضربان و کالری‌سوزی را بالا می‌برند بدون فشار زیاد به مفاصل؛ کری‌ها میان‌تنه و گریپ را تقویت می‌کنند.",
+      {
+        name: { en: "Seated DB Shoulder Press", fa: "پرس سرشانه دمبل نشسته" },
+        sets: 4,
+        reps: "6–10",
+        rest: "120s",
+        hint: "قوس کمر را کنترل کن.",
       },
-      warmup: [
-        {
-          name: { en: "Bike + Dynamic mobility", fa: "دوچرخه + موبیلیتی پویا" },
-          sets: 1,
-          reps: "6–8 min",
-          rest: "-",
-          hint: {
-            en: "Light sweat before Circuit A.",
-            fa: "کمی عرق قبل از سیرکیت A.",
-          },
+      {
+        name: { en: "Cable Fly (Mid)", fa: "کراس‌اور سیمکش (میانی)" },
+        sets: 3,
+        reps: "12–15",
+        rest: "60s",
+        hint: "مکث ۱–۲ ثانیه در اوج.",
+      },
+      {
+        name: { en: "Lateral Raise", fa: "نشر جانب" },
+        sets: 3,
+        reps: "12–15",
+        rest: "60s",
+        hint: "آرنج‌ها را هدایت‌کننده کن.",
+      },
+      {
+        name: { en: "Rope Pressdown", fa: "کشش طنابی پشت‌بازو" },
+        sets: 3,
+        reps: "10–12",
+        rest: "60–75s",
+        hint: "پایین طناب را باز کن.",
+      },
+      {
+        name: { en: "Overhead Rope Extension", fa: "پشت‌بازو بالاسر طنابی" },
+        sets: 3,
+        reps: "10–12",
+        rest: "60–75s",
+        hint: "آرنج‌ها ثابت.",
+      },
+    ],
+    finisher: [
+      {
+        name: { en: "FST-7 Machine Chest Press", fa: "FST-7 پرس سینه دستگاه" },
+        sets: 7,
+        reps: "8–12",
+        rest: "30–45s",
+        hint: "وزنه‌ای که ۸–۱۲ تکرار ثابت بدهد؛ کشش سینه بین ست‌ها ۲۰–۳۰ ث.",
+      },
+    ],
+    cardio: [
+      {
+        name: {
+          en: "Incline Walk (Post-lift)",
+          fa: "پیاده‌روی شیب‌دار (پس از تمرین)",
         },
-      ],
-      circuit_A: [
-        {
-          name: {
-            en: "Trap-Bar Deadlift (moderate)",
-            fa: "ددلیفت تراپ‌بار (متوسط)",
-          },
-          sets: 4,
-          reps: "6",
-          rest: "30–45 s between moves; 2 min between rounds",
-          hint: {
-            en: "Explode up; control down.",
-            fa: "انفجاری بالا؛ کنترل پایین.",
-          },
-        },
-        {
-          name: { en: "DB Push Press", fa: "پوش‌پرس دمبل" },
-          sets: 4,
-          reps: "10",
-          rest: "as above",
-          hint: { en: "Use legs to initiate drive.", fa: "شروع حرکت با پاها." },
-        },
-        {
-          name: { en: "TRX / Bodyweight Row", fa: "روئینگ وزن بدن/تی‌آر‌ایکس" },
-          sets: 4,
-          reps: "12",
-          rest: "as above",
-          hint: {
-            en: "Straight line ears–hips–heels.",
-            fa: "گوش تا پاشنه در یک خط.",
-          },
-        },
-        {
-          name: { en: "Reverse Lunge", fa: "لانج عقب" },
-          sets: 4,
-          reps: "10/leg",
-          rest: "as above",
-          hint: {
-            en: "Long step; knee under hip.",
-            fa: "گام بلند؛ زانو زیر لگن.",
-          },
-        },
-        {
-          name: { en: "Ab-Wheel / Dead-Bug", fa: "اَب‌ویل / ددباگ" },
-          sets: 4,
-          reps: "8–10 or 10/side",
-          rest: "as above",
-          hint: {
-            en: "Ribs down; no lower-back arch.",
-            fa: "دنده پایین؛ قوس کمر نده.",
-          },
-        },
-      ],
-      emom_B: [
-        {
-          name: {
-            en: "Sled Push (Every Minute on the Minute)",
-            fa: "هل دادن سورتمه (EMOM)",
-          },
-          sets: 8,
-          reps: "15–20 m at start of each minute",
-          rest: "Remainder of minute",
-          hint: {
-            en: "Load to finish in ~20–30 s.",
-            fa: "وزن طوری باشد که ۲۰–۳۰ ثانیه طول بکشد.",
-          },
-        },
-      ],
-      finisher: [
-        {
-          name: { en: "Farmer Carry", fa: "کری کشاورز" },
-          sets: 3,
-          reps: "40–60 m",
-          rest: "60–90 s",
-          hint: {
-            en: "Tight abs; short quick steps.",
-            fa: "شکم سفت؛ قدم‌های کوتاه و سریع.",
-          },
-        },
-      ],
-    },
-  ],
-  extra_guidelines: {
-    nutrition: {
-      en: "Start around 2,800–2,900 kcal/day, 180–200 g protein, 70–90 g fat, rest carbs. Place 60–70% carbs pre/post-workout.",
-      fa: "شروع حدود ۲۸۰۰–۲۹۰۰ کیلوکالری در روز، ۱۸۰–۲۰۰ گرم پروتئین، ۷۰–۹۰ گرم چربی، بقیه کربوهیدرات. ۶۰–۷۰٪ کربوهیدرات‌ها قبل/بعد تمرین.",
-    },
-    progression: {
-      en: "Add 2.5–5 kg or 1–2 reps weekly if RIR ≥2 remains. If recovery lags, cut sets by 1 each exercise for one week.",
-      fa: "هفته‌ای ۲٫۵–۵ کیلو یا ۱–۲ تکرار اضافه کن اگر ۲ تکرار ذخیره داری. در صورت افت ریکاوری، یک ست از هر حرکت برای یک هفته کم کن.",
-    },
-    recovery: {
-      en: "Sleep 7.5–9 h. Hydrate 4–5 L/day. Light mobility on rest days.",
-      fa: "خواب ۷٫۵–۹ ساعت. روزانه ۴–۵ لیتر آب. در روزهای استراحت موبیلیتی سبک.",
-    },
+        sets: 1,
+        reps: "15–20 min @ RPE 6",
+        rest: "—",
+        hint: "تمرکز بر چربی‌سوزی.",
+      },
+    ],
   },
-};
-
-export const day_1: IPlan = {
-  day: 1,
-  title: {
-    en: "Upper Strength + Metabolic Finisher",
-    fa: "بالاتنه قدرتی + فینیشر متابولیک",
+  {
+    day: 2,
+    title: {
+      en: "Conditioning + Core (HIIT + Functional)",
+      fa: "شرطی‌سازی + میان‌تنه (HIIT + فانکشنال)",
+    },
+    notes:
+      "با فرود نرم از مفاصل محافظت کن؛ در گرم‌کردن از بینی نفس بکش. هدف تعریق با کیفیت است.",
+    warmup: [
+      {
+        name: { en: "Rower Easy Pace", fa: "روئینگ آرام" },
+        sets: 1,
+        reps: "5–7 min",
+        rest: "—",
+        hint: "شدت ۴–۵.",
+      },
+      {
+        name: { en: "World’s Greatest Stretch", fa: "کشش داینامیک کامل بدن" },
+        sets: 2,
+        reps: "60–90s flow",
+        rest: "—",
+        hint: "لگن و ستون پشتی.",
+      },
+    ],
+    conditioning: [
+      {
+        name: { en: "Assault Bike Intervals", fa: "اینتروال دوچرخه ایربایک" },
+        sets: 10,
+        reps: "30s HARD / 30s EASY",
+        rest: "—",
+        hint: "سخت RPE 9؛ آسان RPE 3.",
+      },
+    ],
+    circuit_A: [
+      {
+        name: { en: "Kettlebell Swings", fa: "سوئینگ کتل‌بل" },
+        sets: 4,
+        reps: "15",
+        rest: "15s (move fast)",
+        hint: "الگوی هیج؛ اسکوات نکن.",
+      },
+      {
+        name: {
+          en: "Box Step-ups (Alt Legs)",
+          fa: "بالا رفتن از باکس (تناوبی)",
+        },
+        sets: 4,
+        reps: "12/leg",
+        rest: "15s",
+        hint: "زانو هم‌راستا با انگشتان.",
+      },
+      {
+        name: { en: "Battle Ropes", fa: "طناب مبارزه" },
+        sets: 4,
+        reps: "20–30s",
+        rest: "60s (after 3 moves)",
+        hint: "سینه بالا، موج کامل.",
+      },
+    ],
+    core: [
+      {
+        name: { en: "Pallof Press (Anti-rotation)", fa: "پالوف پرس (ضدچرخش)" },
+        sets: 3,
+        reps: "12–15/side",
+        rest: "45s",
+        hint: "دنده‌ها پایین، گلوت فعال.",
+      },
+      {
+        name: { en: "Dead Bug", fa: "ددباگ" },
+        sets: 3,
+        reps: "10–12/side",
+        rest: "45s",
+        hint: "کمر پایین چسبیده.",
+      },
+      {
+        name: { en: "Side Plank", fa: "پلانک پهلو" },
+        sets: 3,
+        reps: "30–45s/side",
+        rest: "30s",
+        hint: "لگن بالا، بدن خط مستقیم.",
+      },
+    ],
+    mobility: [
+      {
+        name: { en: "Hip Flexor + Calf Stretch", fa: "کشش خم‌کننده لگن + ساق" },
+        sets: 2,
+        reps: "60s/area",
+        rest: "—",
+        hint: "نفس آرام.",
+      },
+    ],
   },
-  notes: "حرکات اصلی سنگین برای حفظ قدرت؛ فینیشر کوتاه برای افزایش کالری‌سوزی.",
-  warmup: [
-    {
-      name: {
-        en: "Incline treadmill walk (5–7%)",
-        fa: "پیاده‌روی روی تردمیل با شیب ۵–۷٪",
+  {
+    day: 3,
+    title: {
+      en: "Pull — Back/Biceps (FST-7 Lats)",
+      fa: "پول — پشت/جلو‌بازو (FST-7 لت)",
+    },
+    notes: "کمر خنثی؛ قبل از کشش، کتف‌ها را پایین بده. پایان با FST-7 لت.",
+    warmup: [
+      {
+        name: { en: "Band Face Pulls", fa: "فیس‌پول با کش" },
+        sets: 2,
+        reps: "15–20",
+        rest: "30s",
+        hint: "آرنج بالا، چرخش خارجی.",
       },
-      sets: 1,
-      reps: "8–10 min",
-      rest: "-",
-      hint: "تنفس از بینی، شدت ملایم.",
-    },
-    {
-      name: {
-        en: "Band pull-aparts + Scap push-ups",
-        fa: "کشش کشی پشت شانه + شنا اسکاپیولا",
+      {
+        name: { en: "Light Lat Pulldown", fa: "لت سیمکش سبک" },
+        sets: 2,
+        reps: "12–15",
+        rest: "45s",
+        hint: "راه‌اندازی دامنه حرکت.",
       },
-      sets: 2,
-      reps: "15 each",
-      rest: "30 s",
-      hint: "گرم‌کردن سرشانه و پشت.",
-    },
-  ],
-  exercises: [
-    {
-      name: { en: "Barbell Bench Press", fa: "پرس سینه هالتر" },
-      sets: 4,
-      reps: "5–6",
-      rest: "120–150 s",
-      hint: "۱–۲ تکرار ذخیره؛ مکث کوتاه روی سینه، بدون جهش.",
-    },
-    {
-      name: { en: "Chest-Supported Row", fa: "划 پارویی سینه‌تکیه" },
-      sets: 4,
-      reps: "6–8",
-      rest: "120 s",
-      hint: "آرنج‌ها به سمت دنده؛ ستون فقرات خنثی.",
-    },
-    {
-      name: { en: "Incline Dumbbell Press", fa: "پرس سینه دمبل روی شیب" },
-      sets: 3,
-      reps: "8–10",
-      rest: "90 s",
-      hint: "۲–۳ ثانیه پایین‌بردن کنترل‌شده.",
-    },
-    {
-      name: {
-        en: "Lat Pulldown (medium grip)",
-        fa: "لت پول‌داون (گریپ متوسط)",
+    ],
+    exercises: [
+      {
+        name: { en: "Chest-Supported Row", fa: "روینگ سینه‌تکیه" },
+        sets: 4,
+        reps: "6–8",
+        rest: "120s",
+        hint: "مکث ۱ ثانیه روی سینه.",
       },
-      sets: 3,
-      reps: "8–10",
-      rest: "90 s",
-      hint: "سینه بالا، کشش تا ترقوه.",
-    },
-    {
-      name: {
-        en: "Dumbbell Lateral Raise",
-        fa: "پشت‌سرشانه جانبى با دمبل",
+      {
+        name: {
+          en: "Lat Pulldown (Medium-Neutral)",
+          fa: "لت سیمکش (گرفتن خنثی متوسط)",
+        },
+        sets: 4,
+        reps: "8–10",
+        rest: "90s",
+        hint: "تا ترقوه بکش.",
       },
-      sets: 3,
-      reps: "12–15",
-      rest: "60 s",
-      hint: "آرنج‌ها کمی خم؛ تا ارتفاع شانه.",
+      {
+        name: { en: "One-Arm DB Row", fa: "پارو دمبل تک‌دست" },
+        sets: 3,
+        reps: "10–12/side",
+        rest: "75s",
+        hint: "لگن صاف؛ کشش کامل.",
+      },
+      {
+        name: {
+          en: "Seated Cable Row (Wide)",
+          fa: "روینگ سیمکش نشسته (گرفتن عریض)",
+        },
+        sets: 3,
+        reps: "10–12",
+        rest: "75s",
+        hint: "هدایت با آرنج‌ها.",
+      },
+      {
+        name: { en: "Face Pull (Cable)", fa: "فیس‌پول سیمکش" },
+        sets: 3,
+        reps: "12–15",
+        rest: "60s",
+        hint: "تمرکز پشت‌سرشانه.",
+      },
+      {
+        name: { en: "EZ-Bar Curl", fa: "جلو بازو هالتر خم (EZ)" },
+        sets: 3,
+        reps: "8–10",
+        rest: "60–75s",
+        hint: "بدون تاب دادن.",
+      },
+      {
+        name: { en: "Incline DB Curl", fa: "جلو بازو دمبل روی میز شیب‌دار" },
+        sets: 3,
+        reps: "10–12",
+        rest: "60–75s",
+        hint: "چرخش کامل مچ به بیرون.",
+      },
+    ],
+    finisher: [
+      {
+        name: { en: "FST-7 Straight-Arm Pulldown", fa: "FST-7 لت دست‌صاف" },
+        sets: 7,
+        reps: "10–12",
+        rest: "30–45s",
+        hint: "دنده‌ها پایین؛ کشش عمیق لت ۲۰–۳۰ ث.",
+      },
+    ],
+    cardio: [
+      {
+        name: {
+          en: "Incline Walk or Stairmaster",
+          fa: "پیاده‌روی شیب‌دار یا استیرمستر",
+        },
+        sets: 1,
+        reps: "12–15 min @ RPE 6",
+        rest: "—",
+        hint: "تنفس از بینی.",
+      },
+    ],
+  },
+  {
+    day: 4,
+    title: {
+      en: "Legs — Quads/Glutes/Hams (FST-7 Quads)",
+      fa: "پا — جلوپا/گلوت/همسترینگ (FST-7 چهارسر)",
     },
-  ],
-  finisher: [
-    {
-      name: { en: "AirBike sprints", fa: "اسپرینت روی ایر بایک" },
-      sets: 8,
-      reps: "15 s hard / 45 s easy",
-      rest: "as written",
-      hint: "نشسته بمان؛ توان یکنواخت.",
+    notes:
+      "در صورت نیاز از زانوبند استفاده کن؛ عمق کامل با کنترل. امروز FST-7 برای چهارسر است.",
+    warmup: [
+      {
+        name: { en: "Bike + Hip Openers", fa: "دوچرخه ثابت + کشش لگن" },
+        sets: 1,
+        reps: "6–8 min + 2 x 60s per side",
+        rest: "—",
+        hint: "گرم‌کردن زانوها.",
+      },
+      {
+        name: { en: "Glute Bridge (Activation)", fa: "گلوت بریج (فعال‌سازی)" },
+        sets: 2,
+        reps: "15",
+        rest: "30s",
+        hint: "زنجیره پشتی فعال.",
+      },
+    ],
+    exercises: [
+      {
+        name: {
+          en: "Back Squat (or Hack/Safety-Bar)",
+          fa: "اسکوات هالتر (یا هَک/سیفتی بار)",
+        },
+        sets: 4,
+        reps: "5–6",
+        rest: "150s",
+        hint: "منفی ۳ ث؛ سفتی تنه.",
+      },
+      {
+        name: { en: "Bulgarian Split Squat", fa: "لانج بلغاری" },
+        sets: 3,
+        reps: "8–10/leg",
+        rest: "90s",
+        hint: "هم‌راستای انگشتان.",
+      },
+      {
+        name: { en: "Romanian Deadlift", fa: "ددلیفت رومانیایی" },
+        sets: 3,
+        reps: "8–10",
+        rest: "120s",
+        hint: "باسن عقب؛ ساق پا عمودی.",
+      },
+      {
+        name: { en: "Seated Leg Curl", fa: "پشت پا دستگاه نشسته" },
+        sets: 3,
+        reps: "10–12",
+        rest: "75s",
+        hint: "مکث ۱ ث.",
+      },
+    ],
+    finisher: [
+      {
+        name: {
+          en: "FST-7 Leg Press (Quad focus)",
+          fa: "FST-7 پرس پا (تمرکز روی چهارسر)",
+        },
+        sets: 7,
+        reps: "10–12",
+        rest: "30–45s",
+        hint: "پاها پایین/متوسط روی دستگاه؛ کشش عمیق بین ست‌ها.",
+      },
+    ],
+    accessory_circuit: [
+      {
+        name: { en: "Walking Lunges", fa: "لانج راه‌رفتنی" },
+        sets: 2,
+        reps: "12/leg",
+        rest: "—",
+        hint: "گام کوتاه، تنه قائم.",
+      },
+      {
+        name: { en: "Standing Calf Raise", fa: "ساق پا ایستاده" },
+        sets: 3,
+        reps: "12–15",
+        rest: "45s",
+        hint: "دامنه کامل، مکث ۲ ث بالا.",
+      },
+    ],
+    cardio: [
+      {
+        name: { en: "Bike Flush", fa: "دوچرخه سبک پایان تمرین" },
+        sets: 1,
+        reps: "10–12 min @ RPE 5",
+        rest: "—",
+        hint: "کمک به ریکاوری.",
+      },
+    ],
+  },
+  {
+    day: 5,
+    title: {
+      en: "Metabolic Full-Body + Engine (Circuits/EMOM)",
+      fa: "تمام‌بدن متابولیک + استقامت (سیرکیت/EMOM)",
     },
-  ],
-};
+    notes:
+      "امروز تمرکز بر عملکرد ورزشی؛ حرکت تمیز، از تکرارهای فرسایشی پرهیز کن.",
+    warmup: [
+      {
+        name: { en: "Jump Rope", fa: "طناب‌زنی" },
+        sets: 1,
+        reps: "3–5 min easy",
+        rest: "—",
+        hint: "گام‌های سبک.",
+      },
+      {
+        name: { en: "Cossack Squats (Alt)", fa: "اسکوات قزاقی (تناوبی)" },
+        sets: 2,
+        reps: "8/side",
+        rest: "30s",
+        hint: "باز کردن لگن.",
+      },
+    ],
+    circuit_A: [
+      {
+        name: { en: "Goblet Squat", fa: "گابلت اسکوات" },
+        sets: 4,
+        reps: "12",
+        rest: "15s (transition)",
+        hint: "پاشنه‌ها روی زمین، سینه بالا.",
+      },
+      {
+        name: { en: "Push-ups", fa: "شنا سوئدی" },
+        sets: 4,
+        reps: "AMRAP (8–15 target)",
+        rest: "15s",
+        hint: "دامنه کامل.",
+      },
+      {
+        name: { en: "Kettlebell Deadlift (Hinge)", fa: "ددلیفت کتل‌بل (هیج)" },
+        sets: 4,
+        reps: "12–15",
+        rest: "15s",
+        hint: "لت‌ها فعال، ستون فقرات خنثی.",
+      },
+      {
+        name: { en: "Ring/TRX Row", fa: "روینگ با حلقه/TRX" },
+        sets: 4,
+        reps: "10–12",
+        rest: "60s (after 4 moves)",
+        hint: "جمع‌کردن کتف‌ها.",
+      },
+    ],
+    emom_B: [
+      {
+        name: {
+          en: "EMOM 12: Minute 1 — Rower",
+          fa: "EMOM ۱۲: دقیقه ۱ — روئینگ",
+        },
+        sets: 1,
+        reps: "12 min total",
+        rest: "—",
+        hint: "۱۲–۱۵ کالری در دقیقه ۱.",
+      },
+      {
+        name: {
+          en: "Minute 2 — Kettlebell Swings",
+          fa: "دقیقه ۲ — سوئینگ کتل‌بل",
+        },
+        sets: 1,
+        reps: "15–20 reps",
+        rest: "—",
+        hint: "اسنپ مفصل ران.",
+      },
+      {
+        name: { en: "Minute 3 — Assault Bike", fa: "دقیقه ۳ — ایربایک" },
+        sets: 1,
+        reps: "10–12 cal",
+        rest: "—",
+        hint: "کادانس یکنواخت.",
+      },
+    ],
+    core: [
+      {
+        name: { en: "Farmer Carry", fa: "فارمرز واک" },
+        sets: 4,
+        reps: "30–40m heavy",
+        rest: "60–75s",
+        hint: "برِیس محکم، گام کوتاه.",
+      },
+    ],
+    mobility: [
+      {
+        name: {
+          en: "Thoracic Extension on Foam Roller",
+          fa: "اکستنشن ستون پشتی با رول",
+        },
+        sets: 2,
+        reps: "60–90s",
+        rest: "—",
+        hint: "تنفس آرام.",
+      },
+    ],
+    cardio: [
+      {
+        name: { en: "Stairmaster Cooldown", fa: "استیرمستر (خنک‌کردن)" },
+        sets: 1,
+        reps: "10–12 min @ RPE 5–6",
+        rest: "—",
+        hint: "شست‌وشوی عضلات پا؛ آرام تمام کن.",
+      },
+    ],
+  },
+];
