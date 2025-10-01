@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import Info from "@/components/landing/info";
 
 const Page = () => {
   return (
-    <div className="h-[200vh]">
-      <Button>hello</Button>
+    <div className="mx-auto container p-4">
+      <Info />
     </div>
   );
 };

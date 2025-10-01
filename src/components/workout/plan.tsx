@@ -1,6 +1,6 @@
-export const plan = {
+export const PLAN = {
   meta: {
-    client: "lir nikd",
+    client: "Alireza Nikzad",
     date: "2025-09-27",
     goal: {
       en: "Cut body fat from ~27% to 15–18% and reduce visceral fat from 9 → ≤5 while maintaining/increasing lean mass.",
