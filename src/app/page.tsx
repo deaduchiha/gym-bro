@@ -1,9 +1,11 @@
-import FirstPlan from "@/components/workouts/first-plan";
+import { Button } from "@/components/ui/button";
 
-export default function Home() {
+const Page = () => {
   return (
-    <div className="container mx-auto p-4">
-      <FirstPlan />
+    <div className="h-[200vh]">
+      <Button>hello</Button>
     </div>
   );
-}
+};
+
+export default Page;
