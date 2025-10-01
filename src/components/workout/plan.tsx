@@ -1,16 +1,18 @@
+import { IPlan } from "@/types/type";
+
 export const PLAN = {
-  meta: {
-    client: "Alireza Nikzad",
-    date: "2025-09-27",
-    goal: {
-      en: "Cut body fat from ~27% to 15–18% and reduce visceral fat from 9 → ≤5 while maintaining/increasing lean mass.",
-      fa: "کاهش چربی بدن از حدود ۲۷٪ به ۱۵–۱۸٪ و کاهش چربی احشایی از ۹ به ≤۵ با حفظ/افزایش توده بدون چربی.",
-    },
-    weekly_notes: {
-      en: "Train 5 days/week. Add 8–10k steps daily. Keep 1–2 reps in reserve (RIR) on big lifts. Use low-impact cardio (bike/row/incline walk). If joints feel beat up, reduce volume by 20%.",
-      fa: "۵ روز در هفته تمرین. روزانه ۸–۱۰ هزار قدم. در حرکات اصلی ۱–۲ تکرار ذخیره (RIR) نگه‌دار. کاردیو کم‌فشار (دوچرخه/روینگ/پیاده‌روی با شیب). در صورت خستگی مفاصل، حجم را ۲۰٪ کم کن.",
-    },
-  },
+  // meta: {
+  //   client: "Alireza Nikzad",
+  //   date: "2025-09-27",
+  //   goal: {
+  //     en: "Cut body fat from ~27% to 15–18% and reduce visceral fat from 9 → ≤5 while maintaining/increasing lean mass.",
+  //     fa: "کاهش چربی بدن از حدود ۲۷٪ به ۱۵–۱۸٪ و کاهش چربی احشایی از ۹ به ≤۵ با حفظ/افزایش توده بدون چربی.",
+  //   },
+  //   weekly_notes: {
+  //     en: "Train 5 days/week. Add 8–10k steps daily. Keep 1–2 reps in reserve (RIR) on big lifts. Use low-impact cardio (bike/row/incline walk). If joints feel beat up, reduce volume by 20%.",
+  //     fa: "۵ روز در هفته تمرین. روزانه ۸–۱۰ هزار قدم. در حرکات اصلی ۱–۲ تکرار ذخیره (RIR) نگه‌دار. کاردیو کم‌فشار (دوچرخه/روینگ/پیاده‌روی با شیب). در صورت خستگی مفاصل، حجم را ۲۰٪ کم کن.",
+  //   },
+  // },
   week_plan: [
     {
       day: 1,
@@ -505,4 +507,87 @@ export const PLAN = {
       fa: "خواب ۷٫۵–۹ ساعت. روزانه ۴–۵ لیتر آب. در روزهای استراحت موبیلیتی سبک.",
     },
   },
+};
+
+export const day_1: IPlan = {
+  day: 1,
+  title: {
+    en: "Upper Strength + Metabolic Finisher",
+    fa: "بالاتنه قدرتی + فینیشر متابولیک",
+  },
+  notes: "حرکات اصلی سنگین برای حفظ قدرت؛ فینیشر کوتاه برای افزایش کالری‌سوزی.",
+  warmup: [
+    {
+      name: {
+        en: "Incline treadmill walk (5–7%)",
+        fa: "پیاده‌روی روی تردمیل با شیب ۵–۷٪",
+      },
+      sets: 1,
+      reps: "8–10 min",
+      rest: "-",
+      hint: "تنفس از بینی، شدت ملایم.",
+    },
+    {
+      name: {
+        en: "Band pull-aparts + Scap push-ups",
+        fa: "کشش کشی پشت شانه + شنا اسکاپیولا",
+      },
+      sets: 2,
+      reps: "15 each",
+      rest: "30 s",
+      hint: "گرم‌کردن سرشانه و پشت.",
+    },
+  ],
+  exercises: [
+    {
+      name: { en: "Barbell Bench Press", fa: "پرس سینه هالتر" },
+      sets: 4,
+      reps: "5–6",
+      rest: "120–150 s",
+      hint: "۱–۲ تکرار ذخیره؛ مکث کوتاه روی سینه، بدون جهش.",
+    },
+    {
+      name: { en: "Chest-Supported Row", fa: "划 پارویی سینه‌تکیه" },
+      sets: 4,
+      reps: "6–8",
+      rest: "120 s",
+      hint: "آرنج‌ها به سمت دنده؛ ستون فقرات خنثی.",
+    },
+    {
+      name: { en: "Incline Dumbbell Press", fa: "پرس سینه دمبل روی شیب" },
+      sets: 3,
+      reps: "8–10",
+      rest: "90 s",
+      hint: "۲–۳ ثانیه پایین‌بردن کنترل‌شده.",
+    },
+    {
+      name: {
+        en: "Lat Pulldown (medium grip)",
+        fa: "لت پول‌داون (گریپ متوسط)",
+      },
+      sets: 3,
+      reps: "8–10",
+      rest: "90 s",
+      hint: "سینه بالا، کشش تا ترقوه.",
+    },
+    {
+      name: {
+        en: "Dumbbell Lateral Raise",
+        fa: "پشت‌سرشانه جانبى با دمبل",
+      },
+      sets: 3,
+      reps: "12–15",
+      rest: "60 s",
+      hint: "آرنج‌ها کمی خم؛ تا ارتفاع شانه.",
+    },
+  ],
+  finisher: [
+    {
+      name: { en: "AirBike sprints", fa: "اسپرینت روی ایر بایک" },
+      sets: 8,
+      reps: "15 s hard / 45 s easy",
+      rest: "as written",
+      hint: "نشسته بمان؛ توان یکنواخت.",
+    },
+  ],
 };
